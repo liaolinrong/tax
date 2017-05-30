@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>个税计算器</title>
+        <meta name="viewport"
+            content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div class="container" style="width: device-width;">
+            <h3>个税计算器</h3>
+            <br>
+            <form action="/after" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">税前收入: </label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="bfmoney" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">地点: </label>
+                    <div class="col-md-3">
+                        <select class="form-control" name="location">
+                            <option value="hangzhou">杭州</option>
+                            <option value="beijing">北京</option>
+                            <option value="shanghai">上海</option>
+                            <option value="guangzhou">广州</option>
+                            <option value="shenzhen">深圳</option>
+                            <option value="quzhou">衢州</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                        <button type="submit" class="btn btn-info">计算</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</body>
+</html>

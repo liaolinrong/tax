@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>个税计算器</title>
+        <meta name="viewport"
+            content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div class="container" style="width: device-width;">
+            <br>
+            <div class="form-group">
+                <label class="col-md-3 control-label">税后收入: </label>
+                <label class="col-md-3 control-label">{{.finalmoney}}元</label>
+            </div>
+            <table class="table table-striped table-bordered">              
+                <tr>
+                <th>缴纳项目</th>
+                <th>个人缴纳({{.alljiaona}}元)</th>
+                <th>公司缴纳({{.alljiaona_gs}}元)</th>
+                </tr>
+                <tr>
+                <td>养老保险</td>
+                <td>{{.yanglao}}元({{.yanglao_rate}}%)</td>
+                <td>{{.yanglao_gs}}元({{.yanglao_rate_gs}}%)</td>
+                </tr>
+                <tr>
+                <td>医疗保险</td>
+                <td>{{.yiliao}}元({{.yiliao_rate}}%)</td>
+                <td>{{.yiliao_gs}}元({{.yiliao_rate_gs}}%)</td>
+                </tr>
+                <tr>
+                <td>失业保险</td>
+                <td>{{.shiye}}元({{.shiye_rate}}%)</td>
+                <td>{{.shiye_gs}}元({{.shiye_rate_gs}}%)</td>
+                </tr>
+                <tr>
+                <td>工伤保险</td>
+                <td>{{.gongshang}}元({{.gongshang_rate}}%)</td>
+                <td>{{.gongshang_gs}}元({{.gongshang_rate_gs}}%)</td>
+                </tr>
+                <tr>
+                <td>生育保险</td>
+                <td>{{.shengyu}}元({{.shengyu_rate}}%)</td>
+                <td>{{.shengyu_gs}}元({{.shengyu_rate_gs}}%)</td>
+                </tr>
+                <tr>
+                <td>公积金</td>
+                <td>{{.gjj}}元({{.gjj_rate}}%)</td>
+                <td>{{.gjj_gs}}元({{.gjj_rate_gs}}%)</td>
+                </tr>
+                <tr>
+                <td>个人所得税</td>
+                <td>{{.tax}}元</td>
+                </tr>
+            </table>
+            <!--<form action="/after" method="post" class="form-horizontal">-->
+                <!--<div class="form-group">
+                    <label class="col-md-3 control-label">到手收入: </label>
+                    <label class="col-md-3 control-label">{{.finalmoney}}</label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">个人所得税: </label>
+                    <label class="col-md-3 control-label">{{.tax}}</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-6 control-label">个人: </label>
+                    <label class="col-md-6 control-label">公司</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">养老: </label>
+                    <label class="col-md-3 control-label">{{.yanglao}}</label>
+                    <label class="col-md-3 control-label">养老: </label>
+                    <label class="col-md-3 control-label">{{.yanglao_gs}}</label>
+                </div>-->
+
+                <!--<table border="1">
+                <tr>
+                <td>到手收入</td>
+                <td>{{.finalmoney}}</td>
+                </tr>
+                <tr>
+                <td>个人所得税</td>
+                <td>{{.tax}}</td>
+                </tr>
+                <tr>
+                <td>个人</td>
+                <td>公司</td>
+                </tr>
+                <tr>
+                <td>医疗</td>
+                <td>{{.yiliao}}</td>
+                <td>医疗</td>
+                <td>{{.yiliao_gs}}</td>
+                </tr>
+                <tr>
+                <td>失业</td>
+                <td>{{.shiye}}</td>
+                <td>失业</td>
+                <td>{{.shiye_gs}}</td>
+                </tr>
+                </table>-->
+
+            <!--</form>-->
+        </div>
+	</body>
+</html>
