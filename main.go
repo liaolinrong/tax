@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "tax/routers"
+	_ "github.com/liaolinrong/tax/routers"
 	"github.com/astaxie/beego"
 )
 
