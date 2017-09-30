@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"tax/controllers"
+	"github.com/liaolinrong/tax/controllers"
 
 	"github.com/astaxie/beego"
 )
