@@ -49,6 +49,14 @@ type TaxParamLocation struct {
 	Tax_shengyu_max   float64
 	Tax_gjj_max       float64
 
+	//下限
+	Tax_yanglao_min   float64
+	Tax_yiliao_min    float64
+	Tax_shiye_min     float64
+	Tax_gongshang_min float64
+	Tax_shengyu_min   float64
+	Tax_gjj_min       float64
+
 	//缴纳比率
 	Tax_yanglao_rate   float64
 	Tax_yiliao_rate    float64
@@ -64,6 +72,14 @@ type TaxParamLocation struct {
 	Tax_gongshang_max_gs float64
 	Tax_shengyu_max_gs   float64
 	Tax_gjj_max_gs       float64
+
+	//上限 公司方面
+	Tax_yanglao_min_gs   float64
+	Tax_yiliao_min_gs    float64
+	Tax_shiye_min_gs     float64
+	Tax_gongshang_min_gs float64
+	Tax_shengyu_min_gs   float64
+	Tax_gjj_min_gs       float64
 
 	//缴纳比率 公司方面
 	Tax_yanglao_rate_gs   float64
@@ -122,7 +138,13 @@ func init() {
 			Tax_gongshang_max_gs: 14.0, Tax_shengyu_max_gs: 145.0, Tax_gjj_max_gs: 2076.0,
 
 			Tax_yanglao_rate_gs: 0.14, Tax_yiliao_rate_gs: 0.115, Tax_shiye_rate_gs: 0.015,
-			Tax_gongshang_rate_gs: 0.0012, Tax_shengyu_rate_gs: 0.012, Tax_gjj_rate_gs: 0.12},
+			Tax_gongshang_rate_gs: 0.0012, Tax_shengyu_rate_gs: 0.012, Tax_gjj_rate_gs: 0.12,
+
+			Tax_yanglao_min: 193.0, Tax_yiliao_min: 48.0, Tax_shiye_min: 12.0,
+			Tax_gongshang_min: 0.0, Tax_shengyu_min: 0.0, Tax_gjj_min: 176.0,
+
+			Tax_yanglao_min_gs: 338.0, Tax_yiliao_min_gs: 278.0, Tax_shiye_min_gs: 36.0,
+			Tax_gongshang_min_gs: 2.0, Tax_shengyu_min_gs: 29.0, Tax_gjj_min_gs: 176.0},
 
 		"beijing": TaxParamLocation{
 			Tax_yanglao_max: 1551.0, Tax_yiliao_max: 387.0, Tax_shiye_max: 38.0,
@@ -135,7 +157,13 @@ func init() {
 			Tax_gongshang_max_gs: 96.0, Tax_shengyu_max_gs: 155.0, Tax_gjj_max_gs: 2327.0,
 
 			Tax_yanglao_rate_gs: 0.20, Tax_yiliao_rate_gs: 0.10, Tax_shiye_rate_gs: 0.01,
-			Tax_gongshang_rate_gs: 0.005, Tax_shengyu_rate_gs: 0.008, Tax_gjj_rate_gs: 0.12},
+			Tax_gongshang_rate_gs: 0.005, Tax_shengyu_rate_gs: 0.008, Tax_gjj_rate_gs: 0.12,
+
+			Tax_yanglao_min: 206.0, Tax_yiliao_min: 51.0, Tax_shiye_min: 5.0,
+			Tax_gongshang_min: 0.0, Tax_shengyu_min: 0.0, Tax_gjj_min: 206.0,
+
+			Tax_yanglao_min_gs: 517.0, Tax_yiliao_min_gs: 258.0, Tax_shiye_min_gs: 25.0,
+			Tax_gongshang_min_gs: 12.0, Tax_shengyu_min_gs: 20.0, Tax_gjj_min_gs: 206.0},
 
 		"shanghai": TaxParamLocation{
 			Tax_yanglao_max: 1308.0, Tax_yiliao_max: 327.0, Tax_shiye_max: 81.0,
@@ -148,7 +176,13 @@ func init() {
 			Tax_gongshang_max_gs: 81.0, Tax_shengyu_max_gs: 163.0, Tax_gjj_max_gs: 1145.0,
 
 			Tax_yanglao_rate_gs: 0.21, Tax_yiliao_rate_gs: 0.11, Tax_shiye_rate_gs: 0.015,
-			Tax_gongshang_rate_gs: 0.005, Tax_shengyu_rate_gs: 0.01, Tax_gjj_rate_gs: 0.07},
+			Tax_gongshang_rate_gs: 0.005, Tax_shengyu_rate_gs: 0.01, Tax_gjj_rate_gs: 0.07,
+
+			Tax_yanglao_min: 261.0, Tax_yiliao_min: 65.0, Tax_shiye_min: 16.0,
+			Tax_gongshang_min: 0.0, Tax_shengyu_min: 0.0, Tax_gjj_min: 127.0,
+
+			Tax_yanglao_min_gs: 686.0, Tax_yiliao_min_gs: 359.0, Tax_shiye_min_gs: 49.0,
+			Tax_gongshang_min_gs: 16.0, Tax_shengyu_min_gs: 32.0, Tax_gjj_min_gs: 127.0},
 
 		"guangzhou": TaxParamLocation{
 			Tax_yanglao_max: 1484.0, Tax_yiliao_max: 371.0, Tax_shiye_max: 92.0,
@@ -161,7 +195,13 @@ func init() {
 			Tax_gongshang_max_gs: 92.0, Tax_shengyu_max_gs: 157.0, Tax_gjj_max_gs: 6187.0,
 
 			Tax_yanglao_rate_gs: 0.14, Tax_yiliao_rate_gs: 0.08, Tax_shiye_rate_gs: 0.012,
-			Tax_gongshang_rate_gs: 0.005, Tax_shengyu_rate_gs: 0.0085, Tax_gjj_rate_gs: 0.2},
+			Tax_gongshang_rate_gs: 0.005, Tax_shengyu_rate_gs: 0.0085, Tax_gjj_rate_gs: 0.2,
+
+			Tax_yanglao_min: 296.0, Tax_yiliao_min: 74.0, Tax_shiye_min: 18.0,
+			Tax_gongshang_min: 0.0, Tax_shengyu_min: 0.0, Tax_gjj_min: 94.0,
+
+			Tax_yanglao_min_gs: 519.0, Tax_yiliao_min_gs: 296.0, Tax_shiye_min_gs: 44.0,
+			Tax_gongshang_min_gs: 18.0, Tax_shengyu_min_gs: 31.0, Tax_gjj_min_gs: 94.0},
 
 		"shenzhen": TaxParamLocation{
 			Tax_yanglao_max: 1452.0, Tax_yiliao_max: 363.0, Tax_shiye_max: 181.0,
@@ -174,7 +214,13 @@ func init() {
 			Tax_gongshang_max_gs: 72.0, Tax_shengyu_max_gs: 90.0, Tax_gjj_max_gs: 6054.0,
 
 			Tax_yanglao_rate_gs: 0.14, Tax_yiliao_rate_gs: 0.062, Tax_shiye_rate_gs: 0.02,
-			Tax_gongshang_rate_gs: 0.004, Tax_shengyu_rate_gs: 0.005, Tax_gjj_rate_gs: 0.2},
+			Tax_gongshang_rate_gs: 0.004, Tax_shengyu_rate_gs: 0.005, Tax_gjj_rate_gs: 0.2,
+
+			Tax_yanglao_min: 162.0, Tax_yiliao_min: 40.0, Tax_shiye_min: 20.0,
+			Tax_gongshang_min: 0.0, Tax_shengyu_min: 0.0, Tax_gjj_min: 90.0,
+
+			Tax_yanglao_min_gs: 284.0, Tax_yiliao_min_gs: 125.0, Tax_shiye_min_gs: 40.0,
+			Tax_gongshang_min_gs: 8.0, Tax_shengyu_min_gs: 10.0, Tax_gjj_min_gs: 90.0},
 
 		"quzhou": TaxParamLocation{
 			Tax_yanglao_max: 967.0, Tax_yiliao_max: 120.0, Tax_shiye_max: 120.0,
@@ -187,9 +233,15 @@ func init() {
 			Tax_gongshang_max_gs: 72.0, Tax_shengyu_max_gs: 96.0, Tax_gjj_max_gs: 1451.0,
 
 			Tax_yanglao_rate_gs: 0.14, Tax_yiliao_rate_gs: 0.05, Tax_shiye_rate_gs: 0.02,
-			Tax_gongshang_rate_gs: 0.006, Tax_shengyu_rate_gs: 0.008, Tax_gjj_rate_gs: 0.12},
+			Tax_gongshang_rate_gs: 0.006, Tax_shengyu_rate_gs: 0.008, Tax_gjj_rate_gs: 0.12,
+
+			Tax_yanglao_min: 193.0, Tax_yiliao_min: 24.0, Tax_shiye_min: 24.0,
+			Tax_gongshang_min: 0.0, Tax_shengyu_min: 0.0, Tax_gjj_min: 67.0,
+
+			Tax_yanglao_min_gs: 338.0, Tax_yiliao_min_gs: 120.0, Tax_shiye_min_gs: 48.0,
+			Tax_gongshang_min_gs: 14.0, Tax_shengyu_min_gs: 19.0, Tax_gjj_min_gs: 67.0},
 	}
-	fmt.Println(" in init  aaaa ", LocalTaxParamMap["hangzhou"].Tax_yanglao_max)
+	fmt.Println("init data, hangzhou yanglao max: ", LocalTaxParamMap["hangzhou"].Tax_yanglao_max)
 }
 
 type MainController struct {
@@ -227,61 +279,85 @@ func (this *MainController) After() {
 	yanglao := f_bfm * LocalTaxParamMap[location].Tax_yanglao_rate
 	if yanglao > LocalTaxParamMap[location].Tax_yanglao_max {
 		yanglao = LocalTaxParamMap[location].Tax_yanglao_max
+	} else if yanglao < LocalTaxParamMap[location].Tax_yanglao_min {
+		yanglao = LocalTaxParamMap[location].Tax_yanglao_min
 	}
 
 	yanglao_gs := f_bfm * LocalTaxParamMap[location].Tax_yanglao_rate_gs
 	if yanglao_gs > LocalTaxParamMap[location].Tax_yanglao_max_gs {
 		yanglao_gs = LocalTaxParamMap[location].Tax_yanglao_max_gs
+	} else if yanglao_gs < LocalTaxParamMap[location].Tax_yanglao_min_gs {
+		yanglao_gs = LocalTaxParamMap[location].Tax_yanglao_min_gs
 	}
 
 	yiliao := f_bfm * LocalTaxParamMap[location].Tax_yiliao_rate
 	if yiliao > LocalTaxParamMap[location].Tax_yiliao_max {
 		yiliao = LocalTaxParamMap[location].Tax_yiliao_max
+	} else if yiliao < LocalTaxParamMap[location].Tax_yiliao_min {
+		yiliao = LocalTaxParamMap[location].Tax_yiliao_min
 	}
 
 	yiliao_gs := f_bfm * LocalTaxParamMap[location].Tax_yiliao_rate_gs
 	if yiliao_gs > LocalTaxParamMap[location].Tax_yiliao_max_gs {
 		yiliao_gs = LocalTaxParamMap[location].Tax_yiliao_max_gs
+	} else if yiliao_gs < LocalTaxParamMap[location].Tax_yiliao_min_gs {
+		yiliao_gs = LocalTaxParamMap[location].Tax_yiliao_min_gs
 	}
 
 	shiye := f_bfm * LocalTaxParamMap[location].Tax_shiye_rate
 	if shiye > LocalTaxParamMap[location].Tax_shiye_max {
 		shiye = LocalTaxParamMap[location].Tax_shiye_max
+	} else if shiye < LocalTaxParamMap[location].Tax_shiye_min {
+		shiye = LocalTaxParamMap[location].Tax_shiye_min
 	}
 
 	shiye_gs := f_bfm * LocalTaxParamMap[location].Tax_shiye_rate_gs
 	if shiye_gs > LocalTaxParamMap[location].Tax_shiye_max_gs {
 		shiye_gs = LocalTaxParamMap[location].Tax_shiye_max_gs
+	} else if shiye_gs < LocalTaxParamMap[location].Tax_shiye_min_gs {
+		shiye_gs = LocalTaxParamMap[location].Tax_shiye_min_gs
 	}
 
 	gongshang := f_bfm * LocalTaxParamMap[location].Tax_gongshang_rate
 	if gongshang > LocalTaxParamMap[location].Tax_gongshang_max {
 		gongshang = LocalTaxParamMap[location].Tax_gongshang_max
+	} else if gongshang < LocalTaxParamMap[location].Tax_gongshang_min {
+		gongshang = LocalTaxParamMap[location].Tax_gongshang_min
 	}
 
 	gongshang_gs := f_bfm * LocalTaxParamMap[location].Tax_gongshang_rate_gs
 	if gongshang_gs > LocalTaxParamMap[location].Tax_gongshang_max_gs {
 		gongshang_gs = LocalTaxParamMap[location].Tax_gongshang_max_gs
+	} else if gongshang_gs < LocalTaxParamMap[location].Tax_gongshang_min_gs {
+		gongshang_gs = LocalTaxParamMap[location].Tax_gongshang_min_gs
 	}
 
 	shengyu := f_bfm * LocalTaxParamMap[location].Tax_shengyu_rate
 	if shengyu > LocalTaxParamMap[location].Tax_shengyu_max {
 		shengyu = LocalTaxParamMap[location].Tax_shengyu_max
+	} else if shengyu < LocalTaxParamMap[location].Tax_shengyu_min {
+		shengyu = LocalTaxParamMap[location].Tax_shengyu_min
 	}
 
 	shengyu_gs := f_bfm * LocalTaxParamMap[location].Tax_shengyu_rate_gs
 	if shengyu_gs > LocalTaxParamMap[location].Tax_shengyu_max_gs {
 		shengyu_gs = LocalTaxParamMap[location].Tax_shengyu_max_gs
+	} else if shengyu_gs < LocalTaxParamMap[location].Tax_shengyu_min_gs {
+		shengyu_gs = LocalTaxParamMap[location].Tax_shengyu_min_gs
 	}
 
 	gjj := f_bfm * LocalTaxParamMap[location].Tax_gjj_rate
 	if gjj > LocalTaxParamMap[location].Tax_gjj_max {
 		gjj = LocalTaxParamMap[location].Tax_gjj_max
+	} else if gjj < LocalTaxParamMap[location].Tax_gjj_min {
+		gjj = LocalTaxParamMap[location].Tax_gjj_min
 	}
 
 	gjj_gs := f_bfm * LocalTaxParamMap[location].Tax_gjj_rate_gs
 	if gjj_gs > LocalTaxParamMap[location].Tax_gjj_max_gs {
 		gjj_gs = LocalTaxParamMap[location].Tax_gjj_max_gs
+	} else if gjj_gs < LocalTaxParamMap[location].Tax_gjj_min_gs {
+		gjj_gs = LocalTaxParamMap[location].Tax_gjj_min_gs
 	}
 
 	sub51 := f_bfm - yanglao - yiliao - shiye - gongshang - shengyu - gjj
