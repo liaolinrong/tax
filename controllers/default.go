@@ -73,7 +73,7 @@ type TaxParamLocation struct {
 	Tax_shengyu_max_gs   float64
 	Tax_gjj_max_gs       float64
 
-	//上限 公司方面
+	//下限 公司方面
 	Tax_yanglao_min_gs   float64
 	Tax_yiliao_min_gs    float64
 	Tax_shiye_min_gs     float64
